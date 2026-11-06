@@ -1,0 +1,95 @@
+body{
+    padding-top: 50px;
+  padding-bottom: 100px;
+  background: linear-gradient(rgb(30, 0, 0), rgb(83, 0, 0));
+  scroll-behavior: smooth;
+}
+.title {
+	color: #ff0000;
+  transition: 0.4s;
+}
+
+.title:hover {
+  color: darkred;
+  transform: scale(1.2);
+}
+
+#centered {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: auto;
+}
+
+.button-design {
+  background-color: red;
+  transition: 0.2s;
+  border: 0;
+}
+
+.button-design:hover {
+  background-color: darkred;
+  transform: rotate(2deg) scale(1.5);
+}
+
+.text {
+  color: red;
+  transition: 0.2s;
+}
+
+.text:hover {
+  color: darkred;
+  transform: scale(1.1);
+}
+
+.header-text {
+  color: red;
+  transform: scale(0.75);
+  transition: 0.2s;
+}
+
+.header-text:hover {
+  transform: scale(0.8) rotate(2deg);
+}
+
+.topnav {
+  background: linear-gradient(to top ,rgb(80,0,0), rgb(40,0,0));
+  padding: 25px;
+}
+
+a {
+  color: indianred;
+  text-shadow: 2px 2px rgba(255, 0, 0, 0.192);
+  transition: 1s;
+}
+
+a:hover {
+  color: mediumvioletred;
+  text-shadow: 8px 8px rgba(255, 0, 0, 0.432);
+}
+
+.copyright-text {
+  color: rgb(100, 0, 0);
+}
+
+section {
+  padding: 25px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+

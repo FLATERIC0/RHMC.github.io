@@ -8,13 +8,16 @@
         <a href="#Info">Info</a>
         <a href="#footer-info">Footer</a>
         <a href="#gallery">Gallery</a>
+        <a href="#credits">Credits</a>
       </nav>
       <link rel="stylesheet" href="styles.css" />
-      <h1 class="title">RHMC</h1>
+      <img width="250" src="Pics/RHMC title.png" alt="RHMC TITLE PIC">
+      <nav class="topnav">
+      <h3 id="currentTime" class="clock"></h3>
+      </nav>
     </div>
   </head>
   <body>
-      <script src="script.js"></script>
       <section id="home">
         <nav class="topnav">
           <h2 id="centered" class="text">
@@ -22,90 +25,156 @@
           </h2>
           <div class="container">
             <p class="text">
-              Placeholder text
+              The homepage for RHMC.
+            </p>
+            <p id="tinytext" class="text">
+              This website if for my game, although its not the best, im happy with it.
             </p>
           </div>
         </nav>
       </section>
 
       <section id="Download">
-        <div class="container">
+        <div id="centered">
             <nav class="topnav">
               <h3 id="centered" class="text">
                 Download it!
               </h3>
               <iframe frameborder="0" src="https://itch.io/embed/5157642?bg_color=ff0000&amp;fg_color=ffffff&amp;link_color=a10000&amp;border_color=000000" width="552" height="167"><a href="https://flateric0.itch.io/redwood-mental-health-center">Redwood Mental Health Center by FLATERIC0</a></iframe>
+              <h3></h3>
+              <a href="https://flateric0.itch.io/redwood-mental-health-centerample.com" target="_blank">Download (direct link)</a>
           </nav>
       </div>
       </section>
 
       <section id="Info">
-        <div class="container">
+        <div id="centered">
           <nav class="topnav">
             <h3 id="centered" class="text">
               INFOMATION
             </h3>
-            <p class="text">
+            <p id="centered" class="text">
               Info about the development of the website and game.
             </p>
-            <a href="https://docs.google.com/document/d/16sgchdLP_I8meNyqsARBmq45OWRHVmcTo9cSp59iUQ4/edit?tab=t.0">RULES</a>
-            <a href="https://discord.gg/cNGPPzfT2S">Discord</a>
+            <a href="https://docs.google.com/document/d/16sgchdLP_I8meNyqsARBmq45OWRHVmcTo9cSp59iUQ4/edit?tab=t.0" target="_blank">Infomation Booklet</a>
+            <a href="https://discord.gg/cNGPPzfT2S" target="_blank">Discord</a>
+            <h2 id="centered" class="title">
+              Info - Developer
+            </h2>
+            <p id="centered" class="text">
+              The developer of this website: FLATERIC0
+            </p>
+            <div id="centered">
+              <p id="tinytext" class="text">
+              if you are wondering about the ranking system please click "Infomation Booklet" then on the document click "ranking".
+              </p>
+            </div>
           </nav>
         </div>
       </section>
 
       <section id="gallery" aria-label="Photo Gallery">
-        <div class="container">
+        <div id="centered">
           <nav class="topnav">
-            <h2 class="title">
+            <h2 id="centered" class="title">
               Gallery
             </h2>
+            <img src="Pics/RHMC/MinSecurityArea.png" alt="Minimum security patient area">
+            <img src="Pics/RHMC/Entrance.png" alt="Enterance">
+            <img src="Pics/RHMC/StaffRoom.png" alt="Staff Room">
+            <img src="Pics/RHMC/LogOn.png" alt="Log on screen">
+            <img src="Pics/RHMC/SDoffice.png" alt="SD office">
           </nav>
         </div>
       </section>
 
       <section id="minecraft">
-        <div class="container">
+        <div id="centered">
           <nav class="topnav">
             <h2 id="centered" class="text">
               Minecraft server
             </h2>
-            <p id="centered" class="text">IP: PootisSmp2.folium.lol</p>
-              <img src="https://i.pinimg.com/736x/f1/45/45/f1454560e6d86b16aee19dc9a05ab6e2.jpg" alt="spawn shop">
-              <img src="https://i.pinimg.com/736x/93/d6/7e/93d67e461de2a9f87da70dc246f6dc3d.jpg" alt="cave pool">
-              <img src="https://i.pinimg.com/736x/35/6b/8b/356b8b04bcf59d1a590de762bfc5029a.jpg" alt="Spawn from pink room">
-              <img src="https://i.pinimg.com/736x/eb/a8/0b/eba80b251212f971fb24b0b158fe5ac0.jpg" alt="spawn high angle">
-              <img src="https://i.pinimg.com/736x/d7/3a/78/d73a78438f56522728b0414ce74b80da.jpg" alt="My houses dock">
+            <h1 class="text" id="centered">Pootis SMP</h1>
+            <div class="mc-dashboard">
+              <div class="mc-server-card">
+                <div class="mc-server-heading">
+                  <span id="serverState" class="mc-state" data-state="loading">Checking server...</span>
+                  <button id="refreshServer" class="mc-refresh" type="button">Refresh</button>
+                </div>
+                <p id="status" class="mc-player-count" aria-live="polite">Checking player count...</p>
+                <p id="serverDetails" class="mc-muted">Connecting to PootisSmp2.folium.lol</p>
+                <p id="lastUpdated" class="mc-muted">Not updated yet</p>
+              </div>
+              <div class="mc-columns">
+                <section class="mc-panel" aria-labelledby="onlinePlayersHeading">
+                  <h3 id="onlinePlayersHeading">Online players</h3>
+                  <div id="players" class="mc-player-list" aria-live="polite">
+                    <p class="mc-muted">Loading players...</p>
+                  </div>
+                </section>
+                <section class="mc-panel" aria-labelledby="activityHeading">
+                  <h3 id="activityHeading">Recent activity</h3>
+                  <p class="mc-muted">Join and leave events noticed while this page is open.</p>
+                  <ol id="activityFeed" class="mc-activity" aria-live="polite">
+                    <li class="mc-muted">Activity tracking starts when the server responds.</li>
+                  </ol>
+                </section>
+              </div>
+            </div>
+            <p id="centered" class="text mc-address">Server address: <code>PootisSmp2.folium.lol</code></p>
+            <p class="mc-chat-note">Live chat isn't available from the server status feed. A server-side chat plugin or web chat endpoint is needed to show messages here.</p>
+            <div class="mc-gallery">
+              <img width="500" src="Pics/MC/SpawnShop.png" alt="spawn shop">
+              <img width="500" src="Pics/MC/CavePool.png" alt="cave pool">
+              <img width="500" src="Pics/MC/SpawnPink.png" alt="Spawn from pink room">
+              <img width="500" src="Pics/MC/SpawnHigh.png" alt="spawn high angle">
+              <img width="500" src="Pics/MC/HouseDock.png" alt="My houses dock">
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section id="credits">
+        <div id="centered">
+          <nav class="topnav">
+            <h2 class="text" id="centered">
+              Credits
+            </h2>
+            <p class="text" id="centered">
+              FLATERIC0 - dude just made everything
+            </p>
+            <p class="text" id="centered">
+              Unii - Giving me ideas + assistance with the game, mc server and info
+            </p>
+            <p class="text" id="centered">
+              Conkwivas - the spinny cat gif
+            </p>
           </nav>
         </div>
       </section>
       <footer>
         <div>
-          <h2 id="centered" class="text">footer</h2>
-          <div class="container">
+          <div id="centered">
             <section class="footer-info">
               <nav class="topnav">
-                <div class="container">
-                  <h3 class="text">
-                    footer info
-                  </h3>
-                  <p class="text">
-                    Hello! HELLO! hi! HIIIIIII! you reading my website?????
-                  </p>
+                <div id="centered">
+                  <a class="active" href="#home">Home</a>
+                  <a href="#Download"> Download</a>
+                  <a href="#Info">Info</a>
+                  <a href="#footer-info">Footer</a>
+                  <a href="#gallery">Gallery</a>
+                  <a href="#credits">Credits</a>
                 </div>
               </nav>
             </section>
           </div>
-          <div class="container">
+          <div id="centered">
             <p class="copyright-text">
-              This website is my website man
+              Copyright © 2026 FLATERIC0
             </p>
-            <p class="copyright-text">
-              - FLATERIC0
-            </p>
-            <a href="fish.html">FISH BUTTON</a>
+            <img height="50" src="https://raw.githubusercontent.com/orlyjamie/spinningcat/refs/heads/main/cat.gif" alt="SPINNING CAT GIF (by Conkwivas)">
           </div>
         </div>
       </footer>
+      <script src="script.js"></script>
   </body>
 </html>

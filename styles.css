@@ -1,5 +1,5 @@
 body{
-    padding-top: 50px;
+  padding-top: 50px;
   padding-bottom: 100px;
   background: linear-gradient(rgb(30, 0, 0), rgb(83, 0, 0));
   scroll-behavior: smooth;
@@ -56,8 +56,9 @@ body{
 }
 
 .topnav {
-  background: linear-gradient(to top ,rgb(80,0,0), rgb(40,0,0));
+  background-color: rgba(0, 0, 0, 0.349);
   padding: 25px;
+  border-radius: 15px;
 }
 
 a {
@@ -68,11 +69,11 @@ a {
 
 a:hover {
   color: mediumvioletred;
-  text-shadow: 8px 8px rgba(255, 0, 0, 0.432);
+  text-shadow: 8px 8px rgba(255, 241, 241, 0.432);
 }
 
 .copyright-text {
-  color: rgb(100, 0, 0);
+  color: rgba(255, 255, 255, 0.51);
 }
 
 section {
@@ -93,3 +94,200 @@ section {
   border-radius: 8px;
 }
 
+.clock {
+  color: red;
+  transition: 0.8s;
+}
+
+.clock:hover {
+  color: blueviolet;
+  transform: scale(1.2);
+}
+
+#tinytext {
+  font-size: 12px;
+}
+
+.RHMC {
+  color: red;
+  font-style: italic;
+  transform: scale(2.5);
+  transition: 0.8s;
+}
+
+.RHMC:hover {
+  color: mediumvioletred;
+}
+
+#minecraft .topnav {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mc-dashboard {
+  max-width: 900px;
+  margin: 24px auto;
+  text-align: left;
+}
+
+.mc-server-card,
+.mc-panel {
+  padding: 20px;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.349);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.mc-server-heading,
+.mc-columns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mc-server-heading {
+  justify-content: space-between;
+}
+
+.mc-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
+  color: red;
+}
+
+.mc-state::before {
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: #d3a33c;
+  border-radius: 50%;
+}
+
+.mc-state[data-state="online"]::before {
+  background: #62d98b;
+}
+
+.mc-state[data-state="offline"]::before,
+.mc-state[data-state="error"]::before {
+  background: red;
+}
+
+.mc-refresh {
+  padding: 9px 15px;
+  color: #fff;
+  font: inherit;
+  background: red;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mc-refresh:hover:not(:disabled) {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+.mc-refresh:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.mc-player-count {
+  margin: 18px 0 8px;
+  color: red;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.mc-muted {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.92rem;
+  white-space: pre-line;
+}
+
+.mc-columns {
+  align-items: stretch;
+  margin-top: 16px;
+}
+
+.mc-panel {
+  flex: 1;
+  min-width: 0;
+}
+
+.mc-panel h3 {
+  margin-top: 0;
+  color: red;
+}
+
+.mc-player-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mc-player {
+  padding: 7px 11px;
+  color: indianred;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.mc-activity {
+  display: grid;
+  gap: 8px;
+  padding-left: 20px;
+  color: indianred;
+}
+
+.mc-activity li::marker {
+  color: red;
+}
+
+.mc-address code {
+  padding: 4px 8px;
+  color: indianred;
+  background: rgba(0, 0, 0, 0.349);
+  border-radius: 5px;
+}
+
+.mc-chat-note {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  color: rgba(255, 255, 255, 0.51);
+  font-size: 0.9rem;
+}
+
+.mc-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 14px;
+}
+
+.mc-gallery img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  .mc-columns {
+    flex-direction: column;
+  }
+
+  .mc-server-card,
+  .mc-panel {
+    padding: 16px;
+  }
+
+  .mc-player-count {
+    font-size: 1.35rem;
+  }
+}
